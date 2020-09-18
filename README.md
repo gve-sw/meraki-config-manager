@@ -22,7 +22,7 @@ to suit the needs of the Meraki network.
 
 #### Clone the repo
 ```
-$ git clone https://wwwin-github.cisco.com/gve/meraki-topdesk.git
+$ git clone https://github.com/gve-sw/meraki-config-manager.git
 ```
 
 #### Install dependencies
