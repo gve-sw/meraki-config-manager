@@ -25,6 +25,27 @@ to suit the needs of the Meraki network.
 $ git clone https://github.com/gve-sw/meraki-config-manager.git
 ```
 
+#### Set up a Python venv
+First make sure that you have Python 3 installed on your machine. We will then be using venv to create 
+an isolated environment with only the necessary packages.
+
+##### Install virtualenv via pip
+```
+$ pip install virtualenv
+```
+
+##### Create a new venv
+```
+Change to your project folder
+$ cd meraki-config-manager
+
+Create the venv
+$ virtualenv venv
+
+Activate your venv
+$ source venv/bin/activate
+```
+
 #### Install dependencies
 ```
 $ pip install -r requirements.txt
@@ -34,6 +55,14 @@ $ pip install -r requirements.txt
 #### Meraki details :
 You can deploy this prototype in a lab environment or on your own Meraki dashboard online
 [here](https://account.meraki.com/secure/login/dashboard_login).
+
+To generate an API KEY, refer to the documentation [here](https://documentation.meraki.com/zGeneral_Administration/Other_Topics/The_Cisco_Meraki_Dashboard_API#Enable_API_access).
+You will use this for getting an ORGANIZATION ID, and using this application.
+
+You must select an organization to manage and use its ORGANIZATION ID. You may do so by using Meraki's Postman collection
+[here](https://documenter.getpostman.com/view/7928889/SVmsVg6K#18e62fd9-402a-4768-ab5e-f11a44651cfe) and GET the list of organizations,
+or use Meraki's API Docs to generate a request [here](https://developer.cisco.com/meraki/api-v1/#!get-organizations).
+
 Fill in the details of your Meraki deployment in the [DETAILS.py](DETAILS.py) file
 ```python
 
