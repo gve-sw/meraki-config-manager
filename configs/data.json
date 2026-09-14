@@ -1,0 +1,366 @@
+{
+    "mx_l7_firewall": {
+        "rules": [
+            {
+                "policy": "deny",
+                "type": "host",
+                "value": "yahoo.com"
+            },
+            {
+                "policy": "deny",
+                "type": "application",
+                "value": {
+                    "id": "meraki:layer7/application/189",
+                    "name": "Blizzard"
+                }
+            },
+            {
+                "policy": "deny",
+                "type": "applicationCategory",
+                "value": {
+                    "id": "meraki:layer7/category/9",
+                    "name": "Social web & photo sharing"
+                }
+            },
+            {
+                "policy": "deny",
+                "type": "host",
+                "value": "facebook.com"
+            }
+        ]
+    },
+    "mx_1_1_nat_rules": {
+        "rules": [
+            {
+                "name": "Testing",
+                "publicIp": "101.3.1.5",
+                "lanIp": "192.168.128.3",
+                "uplink": "internet1",
+                "allowedInbound": []
+            },
+            {
+                "name": "testing2",
+                "publicIp": "101.3.1.6",
+                "lanIp": "192.168.128.5",
+                "uplink": "internet1",
+                "allowedInbound": []
+            }
+        ]
+    },
+    "wireless_settings": {
+        "meshingEnabled": true,
+        "ipv6BridgeEnabled": true,
+        "locationAnalyticsEnabled": true,
+        "ledLightsOn": true
+    },
+    "ssids": [
+        {
+            "number": 0,
+            "name": "Work",
+            "enabled": true,
+            "splashPage": "None",
+            "ssidAdminAccessible": false,
+            "authMode": "open",
+            "ipAssignmentMode": "NAT mode",
+            "minBitrate": 11,
+            "bandSelection": "Dual band operation",
+            "perClientBandwidthLimitUp": 0,
+            "perClientBandwidthLimitDown": 0,
+            "visible": true,
+            "availableOnAllAps": true,
+            "availabilityTags": []
+        },
+        {
+            "number": 1,
+            "name": "Office WiFi",
+            "enabled": true,
+            "splashPage": "None",
+            "ssidAdminAccessible": false,
+            "authMode": "open",
+            "ipAssignmentMode": "NAT mode",
+            "minBitrate": 11,
+            "bandSelection": "Dual band operation",
+            "perClientBandwidthLimitUp": 0,
+            "perClientBandwidthLimitDown": 0,
+            "visible": true,
+            "availableOnAllAps": true,
+            "availabilityTags": []
+        },
+        {
+            "number": 2,
+            "name": "testing 3 SSID 3",
+            "enabled": false,
+            "splashPage": "None",
+            "ssidAdminAccessible": false,
+            "authMode": "open",
+            "ipAssignmentMode": "NAT mode",
+            "minBitrate": 11,
+            "bandSelection": "Dual band operation",
+            "perClientBandwidthLimitUp": 0,
+            "perClientBandwidthLimitDown": 0,
+            "visible": true,
+            "availableOnAllAps": true,
+            "availabilityTags": []
+        },
+        {
+            "number": 3,
+            "name": "new testing SSID 4",
+            "enabled": false,
+            "splashPage": "None",
+            "ssidAdminAccessible": false,
+            "authMode": "open",
+            "ipAssignmentMode": "NAT mode",
+            "minBitrate": 11,
+            "bandSelection": "Dual band operation",
+            "perClientBandwidthLimitUp": 0,
+            "perClientBandwidthLimitDown": 0,
+            "visible": true,
+            "availableOnAllAps": true,
+            "availabilityTags": []
+        },
+        {
+            "number": 4,
+            "name": "Unconfigured SSID 5",
+            "enabled": false,
+            "splashPage": "None",
+            "ssidAdminAccessible": false,
+            "authMode": "open",
+            "ipAssignmentMode": "NAT mode",
+            "minBitrate": 11,
+            "bandSelection": "Dual band operation",
+            "perClientBandwidthLimitUp": 0,
+            "perClientBandwidthLimitDown": 0,
+            "visible": true,
+            "availableOnAllAps": true,
+            "availabilityTags": []
+        },
+        {
+            "number": 5,
+            "name": "Unconfigured SSID 6",
+            "enabled": false,
+            "splashPage": "None",
+            "ssidAdminAccessible": false,
+            "authMode": "open",
+            "ipAssignmentMode": "NAT mode",
+            "minBitrate": 11,
+            "bandSelection": "Dual band operation",
+            "perClientBandwidthLimitUp": 0,
+            "perClientBandwidthLimitDown": 0,
+            "visible": true,
+            "availableOnAllAps": true,
+            "availabilityTags": []
+        },
+        {
+            "number": 6,
+            "name": "Unconfigured SSID 7",
+            "enabled": false,
+            "splashPage": "None",
+            "ssidAdminAccessible": false,
+            "authMode": "open",
+            "ipAssignmentMode": "NAT mode",
+            "minBitrate": 11,
+            "bandSelection": "Dual band operation",
+            "perClientBandwidthLimitUp": 0,
+            "perClientBandwidthLimitDown": 0,
+            "visible": true,
+            "availableOnAllAps": true,
+            "availabilityTags": []
+        },
+        {
+            "number": 7,
+            "name": "Unconfigured SSID 8",
+            "enabled": false,
+            "splashPage": "None",
+            "ssidAdminAccessible": false,
+            "authMode": "open",
+            "ipAssignmentMode": "NAT mode",
+            "minBitrate": 11,
+            "bandSelection": "Dual band operation",
+            "perClientBandwidthLimitUp": 0,
+            "perClientBandwidthLimitDown": 0,
+            "visible": true,
+            "availableOnAllAps": true,
+            "availabilityTags": []
+        },
+        {
+            "number": 8,
+            "name": "Unconfigured SSID 9",
+            "enabled": false,
+            "splashPage": "None",
+            "ssidAdminAccessible": false,
+            "authMode": "open",
+            "ipAssignmentMode": "NAT mode",
+            "minBitrate": 11,
+            "bandSelection": "Dual band operation",
+            "perClientBandwidthLimitUp": 0,
+            "perClientBandwidthLimitDown": 0,
+            "visible": true,
+            "availableOnAllAps": true,
+            "availabilityTags": []
+        },
+        {
+            "number": 9,
+            "name": "Unconfigured SSID 10",
+            "enabled": false,
+            "splashPage": "None",
+            "ssidAdminAccessible": false,
+            "authMode": "open",
+            "ipAssignmentMode": "NAT mode",
+            "minBitrate": 11,
+            "bandSelection": "Dual band operation",
+            "perClientBandwidthLimitUp": 0,
+            "perClientBandwidthLimitDown": 0,
+            "visible": true,
+            "availableOnAllAps": true,
+            "availabilityTags": []
+        },
+        {
+            "number": 10,
+            "name": "Unconfigured SSID 11",
+            "enabled": false,
+            "splashPage": "None",
+            "ssidAdminAccessible": false,
+            "authMode": "open",
+            "ipAssignmentMode": "NAT mode",
+            "minBitrate": 11,
+            "bandSelection": "Dual band operation",
+            "perClientBandwidthLimitUp": 0,
+            "perClientBandwidthLimitDown": 0,
+            "visible": true,
+            "availableOnAllAps": true,
+            "availabilityTags": []
+        },
+        {
+            "number": 11,
+            "name": "Unconfigured SSID 12",
+            "enabled": false,
+            "splashPage": "None",
+            "ssidAdminAccessible": false,
+            "authMode": "open",
+            "ipAssignmentMode": "NAT mode",
+            "minBitrate": 11,
+            "bandSelection": "Dual band operation",
+            "perClientBandwidthLimitUp": 0,
+            "perClientBandwidthLimitDown": 0,
+            "visible": true,
+            "availableOnAllAps": true,
+            "availabilityTags": []
+        },
+        {
+            "number": 12,
+            "name": "Unconfigured SSID 13",
+            "enabled": false,
+            "splashPage": "None",
+            "ssidAdminAccessible": false,
+            "authMode": "open",
+            "ipAssignmentMode": "NAT mode",
+            "minBitrate": 11,
+            "bandSelection": "Dual band operation",
+            "perClientBandwidthLimitUp": 0,
+            "perClientBandwidthLimitDown": 0,
+            "visible": true,
+            "availableOnAllAps": true,
+            "availabilityTags": []
+        },
+        {
+            "number": 13,
+            "name": "Unconfigured SSID 14",
+            "enabled": false,
+            "splashPage": "None",
+            "ssidAdminAccessible": false,
+            "authMode": "open",
+            "ipAssignmentMode": "NAT mode",
+            "minBitrate": 11,
+            "bandSelection": "Dual band operation",
+            "perClientBandwidthLimitUp": 0,
+            "perClientBandwidthLimitDown": 0,
+            "visible": true,
+            "availableOnAllAps": true,
+            "availabilityTags": []
+        },
+        {
+            "number": 14,
+            "name": "Unconfigured SSID 15",
+            "enabled": false,
+            "splashPage": "None",
+            "ssidAdminAccessible": false,
+            "authMode": "open",
+            "ipAssignmentMode": "NAT mode",
+            "minBitrate": 11,
+            "bandSelection": "Dual band operation",
+            "perClientBandwidthLimitUp": 0,
+            "perClientBandwidthLimitDown": 0,
+            "visible": true,
+            "availableOnAllAps": true,
+            "availabilityTags": []
+        }
+    ],
+    "switch_port_schedules": [
+        {
+            "id": "698057942242427297",
+            "networkId": "L_698057942242442827",
+            "name": "Testing",
+            "portSchedule": {
+                "monday": {
+                    "active": true,
+                    "from": "00:00",
+                    "to": "24:00"
+                },
+                "tuesday": {
+                    "active": true,
+                    "from": "00:00",
+                    "to": "24:00"
+                },
+                "wednesday": {
+                    "active": true,
+                    "from": "00:00",
+                    "to": "24:00"
+                },
+                "thursday": {
+                    "active": true,
+                    "from": "00:00",
+                    "to": "24:00"
+                },
+                "friday": {
+                    "active": true,
+                    "from": "00:00",
+                    "to": "24:00"
+                },
+                "saturday": {
+                    "active": true,
+                    "from": "00:00",
+                    "to": "24:00"
+                },
+                "sunday": {
+                    "active": true,
+                    "from": "00:00",
+                    "to": "24:00"
+                }
+            }
+        }
+    ],
+    "switch_acls": [
+        {
+            "comment": "test",
+            "policy": "deny",
+            "ipVersion": "ipv4",
+            "protocol": "tcp",
+            "srcCidr": "10.0.0.1/32",
+            "srcPort": "any",
+            "dstCidr": "any",
+            "dstPort": "any",
+            "vlan": "any"
+        },
+        {
+            "comment": "new rule",
+            "policy": "deny",
+            "ipVersion": "ipv4",
+            "protocol": "tcp",
+            "srcCidr": "10.0.1.0/24",
+            "srcPort": "any",
+            "dstCidr": "any",
+            "dstPort": "any",
+            "vlan": "any"
+        }
+    ]
+}
